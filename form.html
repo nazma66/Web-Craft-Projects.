@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        p {
+            color: green;
+        }
+
+        h1 {
+            color: rgb(56, 56, 134);
+
+        }
+
+        table {
+            width: 1200px;
+
+        }
+
+        .required {
+            color: red;
+            margin-left: 5px;
+        }
+
+        .large-button {
+            width: 150px;
+            height: 40px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1 style="text-decoration: underline;">Registration for a project.</h1>
+    <h3>Select course on a project one person will be eligible for one course only.</h3>
+
+
+    <form action="process.php" method="post">
+
+        <label for="courses">First Preference<span class="required">*</span>:</label>
+        <select id="courses" name="courses" style="width:400px; height: 25px;">
+            <option value="" disabled selected>Select course</option>
+            <optgroup label="Available Courses">
+                <option value="2D and 3D Animation">2D and 3D Animation</option>
+                <option value="Advanced Customer Service">Advanced Customer Service</option>
+                <option value="Certified Programmer in Python">Certified Programmer in Python</option>
+                <option value="Fashion Garments">Fashion Garments</option>
+                <option value="Fire Safety and Compliance">Fire Safety and Compliance</option>
+            </optgroup>
+        </select>
+
+        <br> <br>
+
+        <label for="name">Name<span class="required">*</span>:<br></label>
+        <input type="text" id="name" style="width:300px; height: 25px;" name="name" required>
+        <br><br>
+
+        <label for="fathersname">Father Name<span class="required">*</span>:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+            for="name">Mother Name<span class="required">*</span>:</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+            for="Gender">Gender<span class="required">*</span>:</label>
+        <br><input type="text" id="fathersname" style="width:200px; height: 25px;" name="fathersname" required>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="mothersname" style="width:200px; height: 25px;" name="mothersname"
+            required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <select id="Gender" name="Gender" style="width:200px; height: 25px;">
+            <optgroup label="Select Gender">
+                <option value=""></option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Others">Others</option>
+            </optgroup>
+
+        </select>
+        <br><br>
+
+        <label for="name">National ID<span class="required">*</span>:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label for="dob"> Date of Birth<span class="required">*</span>:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="ethnicity">Ethnic Group<span class="required">*</span>:</label>
+
+
+
+        <br>
+
+        <input type="text" id="nid" style="width:200px; height: 25px;" name="nid" required>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="date" id="dob" name="dob"
+            style="width:200px; height: 25px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select id="ethnicity" name="ethnicity" style="width:200px; height: 25px;">
+            <option value="" selected="selected">Select Ethnic Group</option>
+            <option value="Armenian community of Dhaka">Armenian community of Dhaka</option>
+            <option value="Armenians in Bangladesh">Armenians in Bangladesh</option>
+            <option value="Bagdi caste">Bagdi caste</option>
+            <option value="Bom people">Bom people</option>
+            <option value="Bede people">Bede people</option>
+            <option value="Bedia (Muslim caste)">Bedia (Muslim caste)</option>
+            <option value="Bengali Hindus">Bengali Hindus</option>
+            <option value="Bengali Muslims">Bengali Muslims</option>
+            <option value="Bengali people">Bengali people</option>
+            <option value="Bihari Muslims">Bihari Muslims</option>
+            <option value="Bihari people">Bihari people</option>
+            <option value="Buno people">Buno people</option>
+            <option value="Chak people">Chak people</option>
+            <option value="Chakma people">Chakma people</option>
+            <option value="Chinese people in Bangladesh">Chinese people in Bangladesh</option>
+
+        </select>
+
+        <br><br>
+        <label for="name">Phone No.<span
+                class="required">*</span>:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="name">Email<span class="required">*</span>:</label><br>
+        <input type="text" id="Phone" style="width:300px; height: 25px;" name="phone"
+            required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="text" id="email" style="width:380px; height: 25px;" name="email" required>
+        <br><br>
+        <label for="yesno">Are you employed? </label>
+        <input type="radio" id="yes" name="yesno" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="yesno" value="no">
+        <label
+            for="no">No</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="name">Monthly salary<span class="required">*</span>:</label>&nbsp;<input type="text" id="Phone"
+            style="width:360px; height: 25px;" name="phone" required>
+        <br>
+        <h3> Present Address.</h3>
+
+        <label for="name">Address<span class="required">*</span>:</label><br> <input type="text" id="Phone"
+            style="width:770px; height: 25px;" name="phone" required><br> <br>
+        <label for="name">City<span
+                class="required">*</span>:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="name">Postcode<span class="required">*</span>:</label><br>
+        <input type="text" id="Phone" style="width:300px; height: 25px;" name="phone"
+            required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="text" id="email" style="width:380px; height: 25px;" name="email" required>
+        <br><br>
+
+        <label for="fathersname">Division<span class="required">*</span>:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+            for="name">District<span class="required">*</span>:</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+            for="Gender">Sub-district<span class="required">*</span>:</label>
+        <br>
+        <select name="pre_division" style="width:200px; height: 25px;" class="input-text" id="pre_division">
+            <option value="" selected="selected">Select Division</option>
+            <option value="5">Barisal</option>
+            <option value="2">Chittagong</option>
+            <option value="1">Dhaka</option>
+            <option value="3">Khulna</option>
+            <option value="6">Rajshahi</option>
+            <option value="7">Rangpur</option>
+            <option value="4">Sylhet</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="mothersname" style="width:200px; height: 25px;" name="mothersname"
+            required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <input type="text" id="fathersname" style="width:200px; height: 25px;" name="fathersname" required>
+
+        </select>
+        <br>
+        <h3> Permanent Address.</h3>
+
+        <label for="name">Address<span class="required">*</span>:</label><br> <input type="text" id="Phone"
+            style="width:770px; height: 25px;" name="phone" required><br> <br>
+        <label for="name">City<span
+                class="required">*</span>:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="name">Postcode<span class="required">*</span>:</label><br>
+        <input type="text" id="Phone" style="width:300px; height: 25px;" name="phone"
+            required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="text" id="email" style="width:380px; height: 25px;" name="email" required>
+        <br><br>
+
+        <label for="fathersname">Division<span class="required">*</span>:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+            for="name">District<span class="required">*</span>:</label>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label
+            for="Gender">Sub-district<span class="required">*</span>:</label>
+        <br>
+        <select name="pre_division" style="width:200px; height: 25px;" class="input-text" id="pre_division">
+            <option value="" selected="selected">Select Division</option>
+            <option value="5">Barisal</option>
+            <option value="2">Chittagong</option>
+            <option value="1">Dhaka</option>
+            <option value="3">Khulna</option>
+            <option value="6">Rajshahi</option>
+            <option value="7">Rangpur</option>
+            <option value="4">Sylhet</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="mothersname" style="width:200px; height: 25px;" name="mothersname"
+            required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <input type="text" id="fathersname" style="width:200px; height: 25px;" name="fathersname" required>
+        <br>
+        <h3> Highest Academic Achievement.</h3>
+
+        <label for="name">Level of Education<span
+                class="required">*</span>:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="name">Institute<span class="required">*</span>:</label><br>
+        <select name="education" id="education" class="input-text" style="width:300px; height: 30px;">
+            <option value="">Select Education Level</option>
+            <option value="Diploma Completed">Diploma Completed</option>
+            <option value="Undergraduate">Undergraduate - Only Final Year</option>
+            <option value="Graduation Completed">Graduation Completed</option>
+            <option value="Post Graduation Completed">Post Graduation Completed</option>
+        </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="text" id="email" style="width:380px; height: 25px;" name="email" required>
+        <br><br>
+        <label for="name">Subject<span
+                class="required">*</span>:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="name">Year<span class="required">*</span>:</label><br>
+        <input type="text" id="Phone" style="width:300px; height: 25px;" name="phone"
+            required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="text" id="email" style="width:380px; height: 25px;" name="email" required>
+        <br><br>
+        </select>
+        <input type="submit" value="Save and Submit" class="large-button">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Exit" class="large-button">
+    </form>
+</body>
+
+</html>
