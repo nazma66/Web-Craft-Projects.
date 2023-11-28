@@ -1,0 +1,232 @@
+@media (min-width: 1400px) {}
+@media (min-width: 1200px) and (max-width:1399px) {
+    /* Default */
+}
+@media (min-width: 992px) and (max-width:1199px) {
+    .hero_con h1 {
+        font-size: 30px;
+    }
+    .hero_con h2 {
+        font-size: 22px;
+    }
+    .hero_img::before {
+        height: 350px;
+        width: 100%;
+    }
+    .hero_icon_area {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .hero_img {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .hero_img img {
+        width: 100%;
+    }
+
+    .feature_con {
+        padding: 20px 25px;
+    }
+
+    .menus_ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+     margin: 0;
+    
+    }
+    .menu_btn {
+        order: -1; /* Move the "BUY NOW" button to the top */
+    }
+}
+@media (min-width: 768px) and (max-width:991px) {
+
+    .menus_ul {
+        display: none;
+        gap: 30px;
+    }
+    .collapse_btn {
+        display: block;
+    }
+
+    .hero_part {
+        padding-top: 0px;
+    }
+    .hero_con h1 {
+        font-size: 32px;
+    }
+    .hero_con h2 {
+        font-size: 24px;
+    }
+    .hero_img::before {
+        bottom: 50%;
+        transform: translateY(47%);
+        height: 350px;
+        width: 100%;
+    }
+    .hero_icon_area {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .social_media_icon {
+        margin-bottom: 15px;
+    }
+    .social_media_icon ul li a {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .hero_img {
+        align-items: start;
+        justify-content: unset;
+    }
+    .hero_img img {
+        width: 100%;
+    }
+
+    .feature_con {
+        padding: 20px 25px;
+    }
+
+    .portfolio_con {
+        padding: 15px;
+    }
+    .portfolio_con h4 {
+        font-size: 18px;
+    }
+
+}
+@media (min-width: 576px) and (max-width:767px) {
+
+    .menus_ul {
+        display: none;
+        gap: 30px;
+    }
+    
+    .collapse_btn {
+        display: block;
+    }
+
+    .hero_part {
+        padding-top: 0px;
+    }
+    .hero_con_main {
+        flex-direction: column;
+    }
+    .hero_con {
+        text-align: center;
+    }
+    .hero_con h1 {
+        font-size: 54px;
+    }
+    .hero_con h2 {
+        font-size: 32px;
+    }
+    .hero_img::before {
+        bottom: 0%;
+        transform: translateY(unset);
+        height: 500px;
+        width: 100%;
+    }
+    .hero_icon_area {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 24px;
+    }
+    .social_media_icon {
+        margin-bottom: 15px;
+    }
+    .social_media_icon ul li a {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .hero_img {
+        align-items: start;
+        justify-content: unset;
+    }
+    .hero_img img {
+        width: 100%;
+    }
+
+    .feature_con_main {
+        flex-direction: center
+    }
+
+    .portfolio_con_main {
+        flex-direction: column;
+    }
+}
+@media (max-width: 575px) {
+    .menus_ul {
+        display: none;
+        gap: 30px;
+    }
+    .collapse_btn {
+        display: block;
+    }
+
+    .hero_part {
+        padding-top: 0px;
+    }
+    .hero_con_main {
+        flex-direction: column;
+    }
+    .hero_con {
+        text-align: center;
+    }
+    .hero_con h1 {
+        font-size: 54px;
+    }
+    .hero_con h2 {
+        font-size: 32px;
+    }
+    .hero_img::before {
+        transform: translateY(0);
+        height: 300px;
+        width: 100%;
+    }
+    .hero_icon_area {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        gap: 24px;
+    }
+    .social_media_icon {
+        margin-bottom: 15px;
+    }
+    .social_media_icon ul li a {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    .hero_img {
+        align-items: start;
+        justify-content: unset;
+    }
+    .hero_img img {
+        width: 100%;
+    }
+
+    .feature_con_main {
+        flex-direction: column;
+    }
+
+    .portfolio_con_main {
+        flex-direction: column;
+    }
+    .feature_head h3 {
+        font-size: 40px;
+    }
+    .feature_con {
+        padding: 20px;
+    }
+}
